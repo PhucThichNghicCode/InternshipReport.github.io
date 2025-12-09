@@ -5,55 +5,44 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 1:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hòa nhập nhanh chóng với văn hóa làm việc tại AWS và làm quen với các bạn mới trong quá trình OJT tại First Cloud Journey (FCJ).
+* Nắm vững kiến thức nền tảng về các dịch vụ AWS cốt lõi (Core Services). Tập thao tác trên AWS Management Console.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tìm hiểu sơ bộ về AWS <br> - Tìm hiểu lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 09/08/2025   | 09/08/2025      |
+| 3   | - Tìm hiểu AWS thông qua module 1 <br>&emsp; + Hạ tầng AWS <br>&emsp; + Công cụ quản lý AWS <br>&emsp; + Tối ưu chi phí <br> - **Thực hành:** Tạo tài khoản AWS <br>                                            | 09/09/2025   | 09/09/2025      | <https://cloudjourney.awsstudygroup.com/> <br><br> <https://www.youtube.com/watch?v=HxYZAK1coOI> <br> <br> <https://www.youtube.com/watch?v=IK59Zdd1poE> <br><br> <https://www.youtube.com/watch?v=HSzrWGqo3ME> <br><br> <https://www.youtube.com/watch?v=pjr5a-HYAjI> <br><br> <https://www.youtube.com/watch?v=2PQYqH_HkXw> <br><br> <https://www.youtube.com/watch?v=IY61YlmXQe8> <br><br> <https://www.youtube.com/watch?v=Hku7exDBURo>|
+| 4   | - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Thao tác với AWS Console <br>&emsp; + Thiết lập MFA và IAM <br>&emsp; + Cài AWS CLI & cấu hình | 09/10/2025   | 09/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Tìm hiểu về EC2: <br>&emsp; + Các loại Instance <br>&emsp; + Lưu trữ: EBS (Elastic Block Store) và Instance Store (Ephemeral Storage) <br>&emsp; + Mạng & Bảo mật: Security Groups, Key Pairs và Public IP vs Private IP vs Elastic IP  <br>&emsp; + IAM Role <br>&emsp; + Tìm hiểu SSH                   | 09/11/2025   | 09/11/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:** <br>&emsp; + Khởi tạo một EC2 <br>&emsp; + Kết nối vào EC2 đó thông qua SSH <br>                                                                                         | 09/12/2025   | 09/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Nắm vững các nội quy, quy định làm việc tại đơn vị thực tập FCJ.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hiểu tổng quan về kiến trúc hạ tầng toàn cầu của AWS, các công cụ quản lý và các nguyên tắc tối ưu hóa chi phí (Module 1).
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Đã tạo và kích hoạt thành công tài khoản AWS Free Tier.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Làm quen với AWS Management Console, thực hiện thiết lập bảo mật tài khoản:
+  * Cấu hình MFA (Multi-Factor Authentication).
+  * Tạo và quản lý IAM User/Group cơ bản.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Cài đặt và cấu hình thành công AWS CLI trên máy tính cá nhân.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Nắm vững kiến thức nền tảng về dịch vụ Amazon EC2, bao gồm:
+  * Phân loại các Instance (Instance Types).
+  * Các tùy chọn lưu trữ: Phân biệt EBS (Elastic Block Store) và Instance Store.
+  * Cơ chế mạng & bảo mật: Security Groups, Key Pairs, phân biệt Public/Private/Elastic IP.
+  * Vai trò của IAM Role trong việc ủy quyền truy cập.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+* Thực hành thành công với dịch vụ EC2:
+  * Khởi tạo một EC2 Instance hoàn chỉnh.
+  * Sử dụng giao thức SSH để kết nối và thao tác với Instance từ máy trạm.
 

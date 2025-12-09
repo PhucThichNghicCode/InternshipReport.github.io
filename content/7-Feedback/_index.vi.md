@@ -5,40 +5,49 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud Journey, giúp team FCJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
 
 ### Đánh giá chung
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+**1. Môi trường làm việc**  
+Môi trường tại FCJ thực sự năng động và đậm chất công nghệ ("tech-driven"). Không khí làm việc luôn khuyến khích sự tò mò và đổi mới. Mình rất ấn tượng với cách mọi người thảo luận về các giải pháp kiến trúc (architecture solutions) – không có khoảng cách giữa "sếp" và thực tập sinh, tất cả đều tập trung vào việc tìm ra giải pháp tối ưu nhất cho bài toán.
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+**2. Sự hỗ trợ của mentor / team admin**  
+Mentor không chỉ là người hướng dẫn mà giống như một "Senior Cloud Engineer" đang kèm cặp đàn em. Khi mình gặp lỗi (ví dụ như không SSH được vào EC2 hay lỗi kết nối RDS), Mentor không sửa giúp ngay mà đưa ra các từ khóa, hướng dẫn cách đọc logs trong CloudWatch để mình tự debug. Cách này tuy lúc đầu hơi khó khăn nhưng giúp mình hiểu sâu vấn đề hơn rất nhiều. Team Admin cũng hỗ trợ nhiệt tình về tài khoản AWS lab để mình không bị gián đoạn khi thực hành.
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+**3. Sự phù hợp giữa công việc và chuyên ngành học**  
+Là sinh viên chuyên ngành CNTT, việc tham gia FCJ như một mảnh ghép hoàn hảo để biến lý thuyết "Mạng máy tính" và "Hệ điều hành" thành thực tế. Những khái niệm trừu tượng như IP, Subnet mask giờ đây hiện hữu rõ ràng thông qua việc cấu hình VPC trên AWS. Đây là bước đệm vững chắc cho định hướng kỹ sư hệ thống/DevOps của mình.
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+**4. Cơ hội học hỏi & phát triển kỹ năng**  
+Đây là phần mình tâm đắc nhất. Từ một người mơ hồ về Cloud, mình đã nắm vững được các dịch vụ cốt lõi của AWS:
+* **EC2 (Elastic Compute Cloud):** Mình đã biết cách khởi tạo máy chủ ảo, lựa chọn instance type phù hợp và quản lý Security Group.
+* **VPC (Virtual Private Cloud):** Hiểu sâu về kiến trúc mạng, cách chia Private/Public Subnet, cấu hình Route Table và Internet Gateway.
+* **S3 (Simple Storage Service):** Học cách lưu trữ static website và quản lý quyền truy cập bucket policy.
+* **IAM (Identity and Access Management):** Hiểu tầm quan trọng của nguyên tắc "least privilege" khi phân quyền cho user và role.
+* **RDS (Relational Database Service):** Biết cách triển khai cơ sở dữ liệu trên cloud và kết nối an toàn với backend.
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+**5. Văn hóa & tinh thần đồng đội**  
+Văn hóa "Share to learn" (Chia sẻ để học hỏi) được thể hiện rất rõ. Mỗi tuần team đều có các buổi tech-talk nhỏ để chia sẻ về những dịch vụ mới hoặc những case study khó. Tinh thần đồng đội lên cao nhất là khi cả nhóm cùng nhau "troubleshoot" một lỗi deploy đến tận tối muộn nhưng ai cũng vui vẻ khi hệ thống chạy thành công (Status check: 2/2 passed).
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+**6. Chính sách / phúc lợi cho thực tập sinh**  
+Ngoài phụ cấp, cái "lời" nhất của mình là được cấp quyền truy cập vào môi trường Sandbox của AWS để vọc vạch mà không sợ bị "bill shock". Các resources tài liệu nội bộ và các buổi workshop training cũng là những phúc lợi kiến thức vô giá.
 
 
 ### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+
+- **Điều bạn hài lòng nhất trong thời gian thực tập?**
+Đó là cảm giác "vỡ òa" khi tự tay mình triển khai thành công một kiến trúc 3-tier (3 lớp) hoàn chỉnh trên AWS, từ Load Balancer trỏ vào Auto Scaling Group cho đến Database nằm trong Private Subnet. Nó chứng minh rằng kiến thức mình học được là thực tế và dùng được ngay.
+
+- **Điều bạn nghĩ công ty cần cải thiện cho các thực tập sinh sau?**
+Mình nghĩ chương trình có thể bổ sung thêm các bài lab về Infrastructure as Code (như Terraform hoặc CloudFormation) sớm hơn một chút, vì việc click tay trên Console tuy trực quan nhưng khá tốn thời gian khi làm lại nhiều lần.
+
+- **Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?**
+Chắc chắn là CÓ. FCJ là môi trường lý tưởng cho những bạn muốn bắt đầu sự nghiệp Cloud/DevOps. Bạn sẽ không bị giao những việc vặt vãnh mà sẽ được "nhúng" mình vào các dự án và công nghệ thực tế.
 
 
 ### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+
+Nên có thêm các buổi "Mock Interview" hoặc định hướng thi chứng chỉ AWS (như SAA-C03) vào cuối kỳ thực tập để các bạn tự tin hơn khi apply chính thức.
+
+Mình rất mong muốn được tiếp tục đồng hành cùng FCJ, có thể là ở vị trí Fresher hoặc Junior Cloud Engineer để tiếp tục chinh phục các dịch vụ nâng cao hơn như EKS hay Serverless.
+
+Cảm ơn team FCJ đã kiên nhẫn và tạo điều kiện cho mình sai để sửa. Đây là một hành trình thực sự đáng nhớ!

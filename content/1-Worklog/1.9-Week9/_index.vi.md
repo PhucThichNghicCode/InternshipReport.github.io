@@ -5,55 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Mục tiêu Tuần 9:
+
+* Đi sâu vào các kiến trúc NLP hiện đại: Transformers, Attention Mechanisms, và Decoders.
+* Khám phá Transfer Learning và các Mô hình Ngôn ngữ Lớn (LLMs) như BERT, GPT, và T5.
+* Triển khai các giải pháp Generative AI sử dụng AWS Bedrock.
+* Tối ưu hóa kiến trúc Dự án Cuối khóa và tinh chỉnh hiệu suất/UI của Chatbot.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tìm hiểu về Transformers vs RNNs <br> - Tìm hiểu về Scaled and Dot-Product Attention <br> - Tìm hiểu về Masked Self Attention <br> - Tìm hiểu về Transformer Decoder                                                                                            | 03/11/2025   | 03/11/2025      | <https://www.coursera.org/learn/attention-models-in-nlp/>
+| 3   | - Làm lab code thực hành về Transformer Summarizer <br> - Tối ưu lại ChatBot và giao diện| 04/011/2025   | 04/11/2025      | https://www.coursera.org/learn/attention-models-in-nlp/> |
+| 4   | - Meeting thay đổi 1 số dịch vụ AWS tối ưu lại dự án <br> - Tìm hiểu Transfer Learning in NLP <br> - Tìm hiểu về các mô hình ngôn ngữ lớn ELMo, GPT, BERT, T5 | 05/11/2025   | 05/11/2025      | <https://www.coursera.org/learn/attention-models-in-nlp/> |
+| 5   | - Tìm hiểu về AWS Bedrock <br> - Thử nghiệm tại AI Chatbot với AWS Bedrock | 06/11/2025   | 06/11/2025      |  |
+| 6   | - Tìm kiếm và tạo dữ liệu cho Chatbot tạo bằng AWS Bedrock <br> - Kiểm thử ChatBot và sửa 1 vài lỗi liên quan đến quá trình làm                                                                                         | 07/11/2025   | 07/11/2025      |  |
 
 
-### Kết quả đạt được tuần 9:
+### Thành tựu Tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Nắm vững các Kiến trúc NLP Nâng cao:
+  * Phân biệt giữa RNNs và **Transformers**.
+  * Hiểu các cơ chế cốt lõi: **Scaled Dot-Product Attention** và **Masked Self-Attention**.
+  * Triển khai một **Transformer Summarizer** thông qua các bài thực hành code.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hiểu về các Mô hình Ngôn ngữ Lớn (LLMs): 
+  * Có cái nhìn sâu sắc về các chiến lược **Transfer Learning**.
+  * Khám phá sự phát triển của các mô hình lớn: **ELMo, GPT, BERT, và T5**.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Ứng dụng Generative AI với AWS: 
+  * Tích hợp thành công **AWS Bedrock** để nâng cấp khả năng của AI Chatbot.
+  * Chọn lọc tập dữ liệu cho fine-tuning/context và giải quyết các lỗi tích hợp.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Tối ưu hóa Dự án:
+  * Tinh chỉnh Giao diện người dùng (UI) để có trải nghiệm người dùng tốt hơn.
+  * Đánh giá lại và tối ưu hóa bộ dịch vụ AWS cho sản phẩm cuối cùng.
 
 

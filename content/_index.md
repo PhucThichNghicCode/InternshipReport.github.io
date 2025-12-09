@@ -13,25 +13,24 @@ chapter: false
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Lai Hoang Minh Phuc
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0335828579
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** phuclhmse184914@fpt.edu.vn
+&emsp; **University:** FPT HCM University
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **Major:** AI
 
-&emsp; **Major:** Information Technology
-
-&emsp; **Class:** AWS082025
+&emsp; **Class:** AWS
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
 &emsp; **Internship Position:** FCJ Cloud Intern
 
-&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
+&emsp; **Internship Duration:** From 08/09/2025 to 14/12/2025
 
-![Your profile picture](/images/avatar.png)
+![Your profile picture](/images/Avatar.jpeg)
 
 ### Report Content
 

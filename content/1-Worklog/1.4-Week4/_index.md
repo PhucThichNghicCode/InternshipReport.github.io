@@ -5,53 +5,44 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Master Hybrid Cloud workflows: Importing/Exporting Virtual Machines (VMs) and integrating On-premises storage.
+* Deepen knowledge of AWS Storage (EFS, FSx, Storage Gateway) and Compute (Autoscaling, Lightsail).
+* Build the mathematical foundation for Natural Language Processing (NLP): Vector Spaces, Probability, and Linear Algebra.
+* Finalize the semester project concept and setup the documentation framework using Hugo.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to implement this week:
+| Day | Task                                                                                                                                                                                                                                                        | Start Date | End Date   | Resources                                 |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- | ----------------------------------------- |
+| Mon | - Learn about EC2 Autoscaling - EFS/FSx - Lightsail <br> - Supplement knowledge on Basic Storage & Compute services on AWS <br> - Learn about Probability and Bayes’ Rule                                                                                   | 29/09/2025 | 29/09/2025 | <https://www.youtube.com/@AWSStudyGroup/> <br><br> <https://www.coursera.org/learn/classification-vector-spaces-in-nlp/>
+| Tue | - Expand knowledge on Database and Security services on AWS <br> - Learn VMWare Workstation <br> - Practice exporting Virtual Machine from On-premises <br> - Practice uploading Virtual Machine to AWS                                                     | 30/09/2025 | 30/09/2025 | <https://www.youtube.com/@AWSStudyGroup/> |
+| Wed | - Learn Linear algebra in Python with Numpy <br> - Learn Euclidean Distance & Cosine Similarity <br> - Learn Manipulating Words in Vector Spaces <br> - Practice code labs on Vector Space Models                                                           | 01/10/2025 | 01/10/2025 | <https://www.coursera.org/learn/classification-vector-spaces-in-nlp/>
+| Thu | - Import Virtual Machine into AWS <br> - Deploy Instance from AMI <br> - Configure S3 bucket ACLs <br> - Export VM from Instance <br> - Clean up AWS Cloud resources <br> - Create Storage Gateway <br> - Mount File shares on On-premises machine          | 02/10/2025 | 02/10/2025 | <https://www.youtube.com/@AWSStudyGroup/> |
+| Fri | - Learn about Hugo Themes <br> - Learn how to write the Final Workshop Report <br> - Summary meeting and finalize the ultimate idea for the final report with the group                                                                                     | 03/10/2025 | 03/10/2025 | <https://www.youtube.com/@AWSStudyGroup/> |
 
 
-### Week 4 Achievements:
+### Week 4 Achievements: 
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully implemented Hybrid Cloud strategies:
+  * Exported VMs from local VMWare Workstation and uploaded them to AWS.
+  * Imported VMs to create AMIs and launched functional Instances.
+  * Exported AWS Instances back to local environments.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Configured Advanced Storage Solutions:
+  * Deployed AWS Storage Gateway.
+  * Successfully mounted AWS file shares directly onto on-premises machines.
+  * Managed S3 Access Control Lists (ACLs) for granular security.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Applied Mathematical Foundations for NLP (Machine Learning):
 
-* Used AWS CLI to perform basic operations such as:
+  * Utilized Python (Numpy) for Linear Algebra operations.
+  * Calculated Euclidean Distance & Cosine Similarity for text analysis.
+  * Understood and applied Bayes’ Rule and Vector Space Models.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Project & Documentation Readiness:
+  * Selected and configured the Hugo Theme for the final report.
+  * Reached a consensus on the final project idea with the team.

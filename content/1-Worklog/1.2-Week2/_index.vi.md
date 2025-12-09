@@ -5,55 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hiểu sâu về kiến trúc mạng AWS: VPC, các tính năng bảo mật và mô hình Multi-VPC.
+* Nắm vững các khái niệm kết nối mạng nâng cao: VPN, DirectConnect và LoadBalancer.
+* Thực hành xây dựng hệ thống mạng hoàn chỉnh: Subnet, Route Table, Internet Gateway, Security Group và Network ACLs.
+* Kết nối và thiết lập làm việc nhóm với các thành viên dự án cuối kỳ.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tìm hiểu về AWS Virtual Private Cloud (VPC) <br> - Tìm hiểu về VPC Security and Multi-VPC features                                                                                             | 15/09/2025   | 15/09/2025      | <https://www.youtube.com/watch?v=O9Ac_vGHquM> <br><br> <https://www.youtube.com/watch?v=BPuD1l2hEQ4&t>
+| 3   | - Tìm hiểu VPN - DirectConnect - LoadBalancer - ExtraResources | 16/09/2025   | 16/09/2025      | <https://www.youtube.com/watch?v=CXU8D3kyxIc&t> |
+| 4   | - **Thực hành:** <br>&emsp; + Làm quen với VPC <br>&emsp; + Xây dựng Subnet <br> &emsp; + Tìm hiểu Route Table và Internet Gateway | 17/09/2025   | 17/09/2025      | <https://www.youtube.com/watch?v=dHoYmQR7FYs> <br><br> <https://www.youtube.com/watch?v=XBJgHS3XQjk> |
+| 5   | - Tìm hiểu và thực hành Security Group <br> - Tìm hiểu và thực hành Network ACLs <br> - Tìm hiểu và thực hành VPC Resource Map                 | 18/09/2025   | 18/09/2025      | <https://www.youtube.com/watch?v=B1qxOQLmavQ> <br><br> <https://www.youtube.com/watch?v=GVDsDu9dOFY&t> <br><br> <https://www.youtube.com/watch?v=fZa_kQ69stI> |
+| 6   | - Ôn tập lại những gì đã học trong tuần <br> - Mở rộng tìm hiểu thêm về VPC <br> - Meeting gặp gỡ và làm quen với các thành viên trong nhóm làm dự án cuối kì                                                                                        | 19/09/2025   | 19/09/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu rõ và phân biệt được các thành phần cốt lõi trong Amazon VPC:Hiểu rõ và phân biệt được các thành phần cốt lõi trong Amazon VPC:
+  * CIDR block
+  * Subnet (Public vs Private)
+  * Route Table & Internet Gateway (IGW)
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Nắm được các giải pháp kết nối mạng và phân phối tải:
+  * VPN & DirectConnect 
+  * Load Balancer
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Thiết lập và quản lý các lớp bảo mật mạng (Network Security):
+  * Security Group: Cấu hình firewall mức Instance (Stateful).
+  * Network ACLs: Cấu hình firewall mức Subnet (Stateless).
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Sử dụng thành thạo công cụ VPC Resource Map để trực quan hóa và kiểm soát luồng đi của tài nguyên trong mạng.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Đã hoàn thành buổi meeting đầu tiên với nhóm dự án.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
 
 

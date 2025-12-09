@@ -5,53 +5,40 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Master AWS Database services: RDS, Aurora, Redshift, and ElastiCache.
+* Develop practical AI skills: Research and implement an AI Chatbot.
+* Finalize the High-Level Architecture Diagram based on mentor feedback.
+* Kick-start the Final Project implementation: Frontend and Backend design.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to implement this week:
+| Day | Task                                                                                                                                                                                                                                | Start Date | End Date   | Resources                                  |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- | ------------------------------------------ |
+| Mon | - Complete Lab Module 06 <br> - Continue editing the Architecture Diagram                                                                                                                                                           | 20/10/2025 | 20/10/2025 | <https://www.youtube.com/@AWSStudyGroup/>  |
+| Tue | - Learn Database Concepts <br> - Learn about Amazon RDS & Amazon Aurora <br> - Learn about Redshift - Elasticache <br> - Learn how to create an AI chatbot                                                                          | 21/10/2025 | 21/10/2025 | <https://www.youtube.com/@AWSStudyGroup/>  |
+| Wed | - Practice creating an AI chatbot <br> - Research and supplement AI knowledge regarding chatbots <br> - Revise the diagram based on reviews from mentors in the group                                                               | 22/10/2025 | 22/10/2025 | <https://www.youtube.com/>                 |
+| Thu | - Commence the Final Project <br> - Design Front-End & Back-end                                                                                                                                                                     | 23/10/2025 | 23/10/2025 |                                            |
+| Fri | - Review knowledge from the week <br> - Continue editing and asking for feedback from group members regarding the architecture diagram <br> - Test AI and design Front-end and Back-end parts                                       | 24/10/2025 | 24/10/2025 |                                            |
 
 
-### Week 7 Achievements:
+### Week 7 Achievements: 
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Successfully created and configured an AWS Free Tier account.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Deep understanding of AWS Database Ecosystem:
+  * Distinguished between Relational (RDS, Aurora) and Data Warehousing (Redshift) services.
+  * Understood In-memory caching strategies using Amazon ElastiCache.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* AI & Machine Learning Implementation: 
+  * Successfully researched and prototyped a functional AI Chatbot.
+  * Integrated AI logic into the project scope.
 
-* Used AWS CLI to perform basic operations such as:
+* Architecture & Design Finalization:
+  * Refined and finalized the System Architecture Diagram after multiple rounds of feedback/review.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Project Execution:
+  * Officially launched the coding phase for the Final Project.
+  * Completed initial designs for both Frontend (UI/UX) and Backend structure.

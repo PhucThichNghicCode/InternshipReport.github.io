@@ -1,47 +1,57 @@
 ---
-title: "Sharing and Feedback"
+title: "Sharing & Feedback"
 date: "2025-11-05"
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud Journey program. This will help the FCJ team improve any shortcomings based on the following aspects:
+### General Assessment
 
-### Overall Evaluation
+**1. Work Environment**
+The environment at FCJ is truly dynamic and "tech-driven." The atmosphere always encourages curiosity and innovation. I was very impressed by how everyone discusses architecture solutions – there is no gap between "bosses" and interns; everyone focuses solely on finding the optimal solution for the problem.
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+**2. Support from Mentor / Team Admin**
+The Mentors act less like teachers and more like Senior Cloud Engineers guiding a junior. When I encountered errors (e.g., unable to SSH into an EC2 instance or RDS connection failures), the Mentor didn't fix them for me immediately. Instead, they provided keywords and guided me on how to read logs in CloudWatch to debug it myself. Although this approach was challenging at first, it helped me understand the problems much more deeply. The Team Admin was also very enthusiastic in supporting AWS lab accounts so I wasn't interrupted during practice.
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+**3. Suitability of Work to Major**
+As an IT student, participating in FCJ was the perfect piece to turn "Computer Networks" and "Operating Systems" theories into reality. Abstract concepts like IP and Subnet masks became tangible through configuring VPCs on AWS. This is a solid foundation for my career path as a System/DevOps Engineer.
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+**4. Learning Opportunities & Skill Development**
+This is the part I value the most. From someone vague about the Cloud, I have mastered the core AWS services:
+* **EC2 (Elastic Compute Cloud):** Learned how to launch virtual servers, select appropriate instance types, and manage Security Groups.
+* **VPC (Virtual Private Cloud):** Gained deep understanding of network architecture, dividing Private/Public Subnets, and configuring Route Tables and Internet Gateways.
+* **S3 (Simple Storage Service):** Learned how to host static websites and manage bucket policy permissions.
+* **IAM (Identity and Access Management):** Understood the importance of the "least privilege" principle when assigning permissions to users and roles.
+* **RDS (Relational Database Service):** Learned how to deploy databases on the cloud and connect securely to the backend.
 
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+**5. Culture & Team Spirit**
+The "Share to learn" culture is very evident. Every week, the team holds small tech-talks to share new services or difficult case studies. Team spirit peaks when the whole group troubleshoots a deployment error together until late at night, but everyone is happy when the system runs successfully (Status check: 2/2 passed).
 
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+**6. Intern Policies / Benefits**
+Besides the allowance, the most "profitable" thing for me was being granted access to the AWS Sandbox environment to experiment without fear of "bill shock." Internal documentation resources and training workshops are also invaluable knowledge benefits.
 
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
 
----
+### Other Questions
 
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+- **What were you most satisfied with during your internship?**
+It was the "aha!" moment when I successfully deployed a complete 3-tier architecture on AWS by myself, from the Load Balancer pointing to the Auto Scaling Group, down to the Database located in the Private Subnet. It proved that the knowledge I learned is practical and immediately applicable.
 
----
+- **What do you think the company needs to improve for future interns?**
+I think the program could introduce Infrastructure as Code (IaC) labs like Terraform or CloudFormation a bit earlier. While clicking through the Console is intuitive, it becomes quite time-consuming when re-doing tasks multiple times.
 
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+- **If you were to introduce this to friends, would you recommend interning here? Why?**
+Definitely YES. FCJ is the ideal environment for those who want to start a career in Cloud/DevOps. You won't be assigned petty tasks; instead, you will be "immersed" in real projects and technologies.
+
+
+### Suggestions & Wishes
+
+- **Do you have any suggestions to improve the internship experience?**
+There should be more "Mock Interview" sessions or guidance for AWS certifications (like SAA-C03) towards the end of the internship so that interns feel more confident when applying for official positions.
+
+- **Do you want to continue this program in the future?**
+I am very eager to continue accompanying FCJ, possibly as a Fresher or Junior Cloud Engineer, to continue conquering more advanced services like EKS or Serverless.
+
+- **Other feedback (feel free to share):**
+Thank you to the FCJ team for being patient and creating conditions for me to make mistakes and learn from them. This has been a truly memorable journey!

@@ -5,55 +5,45 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 3:
 
-### Mục tiêu tuần 3:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm vững các dịch vụ tính toán EC2: Vòng đời, Lưu trữ (EBS/Instance Store), và Tự động mở rộng (Auto Scaling).
+* Triển khai kết nối nâng cao sử dụng AWS Transit Gateway.
+* Triển khai các giải pháp lưu trữ và phân phối nội dung có khả năng mở rộng (S3 & CloudFront).
+* Tìm hiểu các khái niệm nền tảng về AI/ML (NLP, Phân tích cảm xúc) cho dự án cuối khóa.
+* Phối hợp với nhóm để thảo luận và chốt ý tưởng cho dự án cuối khóa.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tạo EC2 Instances trong Subnets <br> - Thực hành tạo Internet Gateway <br> - Tìm hiểu về Transit Gateway Route Tables <br> - Cài đặt Transit Gateway <br> - Kết nối EC2 Instance tới Endpoint                                                                                            | 22/09/2025   | 22/09/2025      | <https://www.youtube.com/@AWSStudyGroup/> <br><br> <https://cloudjourney.awsstudygroup.com/>
+| 3   | - Tìm hiểu thêm về EC2 <br>&emsp; + AMI/ Backup/ Key pair <br>&emsp; + Elastic block store <br>&emsp; + Instances store <br>&emsp; + User data & meta data <br>&emsp; + EC2 auto scaling<br>                                            | 23/09/2025   | 23/09/2025      | <https://cloudjourney.awsstudygroup.com/> <br><br> <https://www.youtube.com/@AWSStudyGroup/> |
+| 4   | - Triển khai hạ tầng <br> - Tạo Backup plan <br> - Tiến hành kiếm thử khôi phục <br> - Dọn dẹp tài nguyên <br> - Tạo S3 Bucket | 24/09/2025   | 24/09/2025      | <https://cloudjourney.awsstudygroup.com/> <br><br> <https://www.youtube.com/@AWSStudyGroup/> |
+| 5   | - Tạo EC2 cho Storage Gateway <br> - Thực hành tạo thử 1 website tĩnh đơn giản <br> - Cấu hình public access block và public objects <br> - Tìm hiểu về AWS CloudFont và thực hành cấu hinh cho CloudFont                | 25/09/2025   | 25/09/2025      | <https://cloudjourney.awsstudygroup.com/> <br><br> <https://www.youtube.com/@AWSStudyGroup/> |
+| 6   | - Tìm hiểu Supervised ML & Sentiment Analysis <br> - Natural Language preprocessing <br> - Visualizing tweets and Logistic Regression models <br> - Meeting nhóm để lên ý tưởng cho dự án cuối kì                                                                                       | 26/09/2025   | 26/09/2025      | <https://www.coursera.org/learn/classification-vector-spaces-in-nlp/> |
 
 
-### Kết quả đạt được tuần 3:
+### Thành tựu Tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Đã quản lý và tối ưu hóa thành công các EC2 Instances:
+  * Cấu hình AMIs, Key Pairs, và User Data/Meta Data.
+  * Phân biệt được sự khác nhau giữa Elastic Block Store (EBS) và Instance Store.
+  * Triển khai EC2 Auto Scaling để đảm bảo tính sẵn sàng cao.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Xây dựng các cấu trúc mạng phức tạp sử dụng AWS Transit Gateway để kết nối các VPC.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Thực hiện các hoạt động Khôi phục sau thảm họa và Lưu trữ:
+  * Tạo các Backup plans và thực hiện kiểm thử khôi phục thành công.
+  * Triển khai một Website tĩnh sử dụng S3 Buckets.
+  * Cấu hình các cài đặt Truy cập công khai và Object permissions.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Tối ưu hóa hiệu suất phân phối nội dung: 
+  * Tích hợp AWS CloudFront (CDN) với S3 để giảm độ trễ và cải thiện tốc độ truy cập.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Bước đầu tiếp cận với Machine Learning (NLP):
+  * Hiểu các khái niệm về Học máy có giám sát (Supervised ML) & Phân tích cảm xúc.
+  * Thực hành tiền xử lý Ngôn ngữ tự nhiên và trực quan hóa Hồi quy Logistic.
+  * Xác định khái niệm ban đầu cho dự án cuối khóa.
 
 

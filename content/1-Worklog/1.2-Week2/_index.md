@@ -5,53 +5,40 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Deeply understand AWS networking architecture: VPC, security features, and Multi-VPC models.
+* Master advanced networking concepts: VPN, DirectConnect, and LoadBalancer.
+* Practice building a complete network system: Subnet, Route Table, Internet Gateway, Security Group, and Network ACLs.
+* Connect and establish teamwork with final project team members.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to implement this week:
+| Day | Task                                                                                                                                                                                                                                                        | Start Date | End Date   | Resources                                 |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- | ----------------------------------------- |
+| Mon | - Learn about AWS Virtual Private Cloud (VPC) <br> - Learn about VPC Security and Multi-VPC features                                                                                                                                                        | 15/09/2025 | 15/09/2025 | <https://www.youtube.com/watch?v=O9Ac_vGHquM> <br><br> <https://www.youtube.com/watch?v=BPuD1l2hEQ4&t>
+| Tue | - Learn about VPN - DirectConnect - LoadBalancer - ExtraResources                                                                                                                                                                                           | 16/09/2025 | 16/09/2025 | <https://www.youtube.com/watch?v=CXU8D3kyxIc&t> |
+| Wed | - **Practice:** <br>&emsp; + Get familiar with VPC <br>&emsp; + Build Subnets <br> &emsp; + Learn about Route Table and Internet Gateway                                                                                                                    | 17/09/2025 | 17/09/2025 | <https://www.youtube.com/watch?v=dHoYmQR7FYs> <br><br> <https://www.youtube.com/watch?v=XBJgHS3XQjk> |
+| Thu | - Learn and practice Security Groups <br> - Learn and practice Network ACLs <br> - Learn and practice VPC Resource Map                                                                                                                                      | 18/09/2025 | 18/09/2025 | <https://www.youtube.com/watch?v=B1qxOQLmavQ> <br><br> <https://www.youtube.com/watch?v=GVDsDu9dOFY&t> <br><br> <https://www.youtube.com/watch?v=fZa_kQ69stI> |
+| Fri | - Review what was learned during the week <br> - Expand knowledge on VPC <br> - Meeting to meet and get to know final project team members                                                                                                                  | 19/09/2025 | 19/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
-### Week 2 Achievements:
+### Week 2 Achievements: 
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Clearly understand and distinguish core Amazon VPC components:
+  * CIDR block
+  * Subnet (Public vs Private)
+  * Route Table & Internet Gateway (IGW)
 
-* Successfully created and configured an AWS Free Tier account.
+* Grasp networking connectivity and load distribution solutions:
+  * VPN & DirectConnect (Hybrid Cloud connectivity)
+  * Load Balancer (Application load balancing)
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Setup and manage network security layers:
+  * Security Group: Configure Instance-level firewall (Stateful).
+  * Network ACLs: Configure Subnet-level firewall (Stateless).
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Proficiently use the VPC Resource Map tool to visualize and control resource traffic flow within the network.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed the first meeting with the project team.

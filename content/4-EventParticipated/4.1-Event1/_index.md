@@ -1,126 +1,94 @@
 ---
-title: "Event 1"
-date: "2025-11-05"
+title: "Event 2"
+date: "2025-11-29"
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “AWS Well-Architected Security Pillar”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Deep dive into the 5 core pillars of AWS Security: IAM, Detection, Infrastructure Protection, Data Protection, and Incident Response.
+- Understand modern security principles: Zero Trust, Least Privilege, and Defense in Depth.
+- Learn to automate security checks and incident response using AWS native tools.
+- Identify common cloud threats in the Vietnam market and how to mitigate them.
 
-### Speakers
-
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Opening & Security Foundation 
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- **Core Principles**: Moving beyond perimeter security to **Defense in Depth**, **Zero Trust** architecture, and strictly enforcing **Least Privilege**.
+- **Shared Responsibility Model**: Clarifying what AWS secures (of the cloud) vs. what the customer secures (in the cloud).
+- **Local Context**: Discussing top security threats specifically targeting cloud environments in Vietnam.
 
-#### Transitioning to modern application architecture – Microservices
+#### Pillar 1: Identity & Access Management (IAM) 
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- **Modern IAM Architecture**: Moving away from long-term credentials (IAM Users) to temporary credentials (IAM Roles).
+- **Governance**: Using **IAM Identity Center** for SSO and centralized management.
+- **Control**: Implementing **SCPs (Service Control Policies)** and permission boundaries for multi-account environments.
+- **Best Practices**: Enforcing MFA, regular credential rotation, and using **Access Analyzer** to validate policies.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Pillar 2: Detection & Continuous Monitoring
 
-#### Domain-Driven Design (DDD)
+- **Logging Strategy**: "Log everything" approach using **CloudTrail** (org-level), **VPC Flow Logs**, and ALB/S3 logs.
+- **Threat Detection**: Utilizing **Amazon GuardDuty** for intelligent threat detection.
+- **Centralization**: Aggregating findings in **AWS Security Hub**.
+- **Detection-as-Code**: Automating alerts using **Amazon EventBridge** to trigger immediate notifications.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Pillar 3: Infrastructure Protection 
 
-#### Event-Driven Architecture
+- **Network Security**: Implementing rigorous VPC segmentation and distinguishing strictly between private and public subnets.
+- **Firewalls**: Understanding the layered defense using **WAF** (Web Application Firewall), **AWS Shield** (DDoS), and **Network Firewall**.
+- **Access Control**: Differentiating between Stateful (Security Groups) and Stateless (NACLs) firewalls.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Pillar 4: Data Protection
 
-#### Compute Evolution
+- **Encryption Strategy**:
+    - **At-rest**: Encrypting S3 buckets, EBS volumes, RDS, and DynamoDB.
+    - **In-transit**: TLS/SSL enforcement.
+- **Key Management**: Managing keys via **AWS KMS** (Key Management Service), focusing on grants and rotation policies.
+- **Secrets Management**: Removing hardcoded credentials from code by using **Secrets Manager** and **Systems Manager Parameter Store**.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### Pillar 5: Incident Response (IR) 
 
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- **IR Lifecycle**: Preparation -> Detection & Analysis -> Containment, Eradication & Recovery -> Post-Incident Activity.
+- **Automation**: Using **AWS Lambda** and **Step Functions** to auto-remediate issues (e.g., isolating a compromised EC2 instance).
+- **Playbooks**: Walkthrough of standard responses for scenarios like "Compromised IAM Key," "S3 Public Exposure," and "Malware Detection."
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Identity is the New Perimeter
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- Identity management is the most critical line of defense. Long-term access keys are a major risk; utilizing IAM Roles and SSO is mandatory for a modern architecture.
 
-#### Technical Architecture
+#### Visibility is Paramount
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- You cannot protect what you cannot see. Enabling centralized logging (CloudTrail, Config) and threat detection (GuardDuty) is the first step in any security strategy.
 
-#### Modernization Strategy
+#### Automate Security
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Humans are slow; attacks are fast. Security responses (locking down a user, blocking an IP) should be automated via code (Lambda/EventBridge) wherever possible.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Audit IAM Policies**: Review current permissions to ensure "Least Privilege" and remove unused IAM Users.
+- **Enable GuardDuty**: Activate GuardDuty in the main region to detect anomalies immediately.
+- **Encrypt Data**: Ensure all new S3 buckets and EBS volumes have default encryption enabled via KMS.
+- **Develop IR Playbooks**: Draft a basic Incident Response plan for "S3 Public Leak" and "Compromised Credentials" scenarios.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+The **"AWS Well-Architected Security Pillar"** workshop was an intensive and highly focused morning session. It provided a structured approach to security that is often overlooked in rushed development cycles.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Deep Dive into "Defense in Depth"
+- The session on **Infrastructure Protection** clarified how to layer security controls (WAF -> NACL -> SG) so that if one fails, others are still in place.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Practical Focus on Automation
+- Seeing the **"Mini Demo"** on validating IAM policies and simulating access was very helpful. It showed that security can be tested just like software code.
+- The **Incident Response** segment changed my perspective: instead of waking up at 3 AM to fix a hack manually, we can write Lambda functions to contain threats automatically.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+#### Local Context
+- Hearing about **common pitfalls in Vietnamese enterprises** helped me relate the theoretical concepts to the actual risks our business faces daily.

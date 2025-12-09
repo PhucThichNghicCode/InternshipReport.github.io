@@ -5,53 +5,43 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 1 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Integrate into the AWS work culture and get to know new colleagues during the OJT process at First Cloud Journey (FCJ).
+* Understand foundational knowledge of AWS Core Services. Practice operations on the AWS Management Console.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Mon   | - Preliminary research on AWS <br> - Learn about the rules and regulations at the internship unit                                                                                                   | 09/08/2025 | 09/08/2025      |
+| Tue   | - Learn AWS through Module 1 <br>&emsp; + AWS Infrastructure <br>&emsp; + AWS Management Tools <br>&emsp; + Cost Optimization <br> **Practice:** Create an AWS account <br>                                              | 09/09/2025 | 09/09/2025      | <https://cloudjourney.awsstudygroup.com/> <br><br> <https://www.youtube.com/watch?v=HxYZAK1coOI> <br> <br> <https://www.youtube.com/watch?v=IK59Zdd1poE> <br><br> <https://www.youtube.com/watch?v=HSzrWGqo3ME> <br><br> <https://www.youtube.com/watch?v=pjr5a-HYAjI> <br><br> <https://www.youtube.com/watch?v=2PQYqH_HkXw> <br><br> <https://www.youtube.com/watch?v=IY61YlmXQe8> <br><br> <https://www.youtube.com/watch?v=Hku7exDBURo>|
+| Wed   | - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Interact with AWS Console <br>&emsp; + Set up MFA and IAM <br> &emsp; + Install & configure AWS CLI | 09/10/2025 | 09/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thu   | - Learn about EC2: <br>&emsp; + Instance Types <br>&emsp; + Storage: EBS (Elastic Block Store) and Instance Store (Ephemeral Storage) <br>&emsp; + Network & Security: Security Groups, Key Pairs, and Public IP vs Private IP vs Elastic IP <br>&emsp; + IAM Role <br>&emsp; + Learn about SSH <br>                           | 09/11/2025 | 09/11/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Fri   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect to that EC2 instance via SSH                                                                                     | 09/12/2025 | 09/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 1 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Mastered the rules and working regulations at the FCJ internship unit.
 
-* Successfully created and configured an AWS Free Tier account.
+* Understood the overview of AWS global infrastructure architecture, management tools, and cost optimization principles (Module 1).
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully created and activated an AWS Free Tier account.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Familiarized with the AWS Management Console, performed account security setup:
+  * Configured MFA (Multi-Factor Authentication).
+  * Created and managed basic IAM Users/Groups.
 
-* Used AWS CLI to perform basic operations such as:
+* Successfully installed and configured AWS CLI on a personal computer.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Mastered foundational knowledge of the Amazon EC2 service, including:
+  * Instance Types classification.
+  * Storage options: Distinguish between EBS (Elastic Block Store) and Instance Store.
+  * Network & Security mechanisms: Security Groups, Key Pairs, distinguishing Public/Private/Elastic IP.
+  * The role of IAM Role in access delegation.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Successfully practiced with EC2 service:
+  * Launched a complete EC2 Instance.
+  * Used SSH protocol to connect and interact with the Instance from the workstation.

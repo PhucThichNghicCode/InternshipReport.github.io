@@ -1,39 +1,36 @@
 ---
 title: "Self-Assessment"
-date: "2025-11-05"
+date: "2025-11-28"
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at **[First Cloud Journey / AWS Study Group]** from **September 15, 2025** to **November 28, 2025**, I had the opportunity to bridge the gap between academic theory and professional application in the field of Cloud Computing and Artificial Intelligence.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+I actively participated in the **"Development of an Intelligent AI Chatbot using AWS Bedrock and Serverless Architecture"** project. Through this intensive period, I significantly improved my skills in **Cloud Infrastructure (AWS VPC, EC2, Lambda), Natural Language Processing (BERT, Transformers), and Full-stack System Integration**.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+In terms of work ethic, I consistently strived to master new technologies (such as GenAI and Serverless), complied with project timelines, and collaborated effectively with mentors and team members to optimize the system architecture.
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+To objectively reflect on my internship period, I evaluate myself based on the following criteria:
 
-### Needs Improvement
+| No. | Criteria | Description | Good | Fair | Average |
+| --- | --- | --- | --- | --- | --- |
+| 1 | **Professional knowledge & skills** | Grasping AWS core services, NLP algorithms, and applying them to build a functional product. | ✅ | ☐ | ☐ |
+| 2 | **Ability to learn** | Rapidly adapting to new tech stacks (AWS Bedrock, Hugging Face) within a short timeframe. | ✅ | ☐ | ☐ |
+| 3 | **Proactiveness** | Proposing architectural changes (Migration to Serverless) to improve performance. | ✅ | ☐ | ☐ |
+| 4 | **Sense of responsibility** | Committing to deadlines for the Proposal, Midterm Exam, and Final Deployment. | ✅ | ☐ | ☐ |
+| 5 | **Discipline** | Adhering to strict schedules, reporting guidelines, and organizational rules. | ☐ | ✅ | ☐ |
+| 6 | **Progressive mindset** | Receptive to feedback regarding Architecture Diagrams and UI/UX design. | ✅ | ☐ | ☐ |
+| 7 | **Communication** | Articulating technical concepts clearly in weekly reports and team meetings. | ☐ | ✅ | ☐ |
+| 8 | **Teamwork** | Coordinating with Front-end and Back-end members to resolve integration conflicts. | ✅ | ☐ | ☐ |
+| 9 | **Professional conduct** | Maintaining a respectful and professional attitude towards mentors and peers. | ✅ | ☐ | ☐ |
+| 10 | **Problem-solving skills** | Debugging integration errors and optimizing system latency during the testing phase. | ☐ | ✅ | ☐ |
+| 11 | **Contribution to project/team** | Delivering a working AI module and finalizing the system deployment on AWS. | ✅ | ☐ | ☐ |
+| 12 | **Overall** | General evaluation of the entire internship period. | ✅ | ☐ | ☐ |
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+### Areas for Improvement
+
+* **Enhance Operational Discipline:** I need to strengthen my adherence to strict organizational workflows and time management to avoid last-minute crunches during deployment phases.
+* **Deepen Problem-Solving Strategy:** Move from "reactive debugging" to "proactive architectural design" to anticipate and prevent system errors before they occur.
