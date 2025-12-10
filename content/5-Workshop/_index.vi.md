@@ -3,28 +3,36 @@ title: "Workshop"
 date: "2025-11-05"
 weight: 5
 chapter: false
-pre: " <b> 5. </b> "
+pre: " <b> 5 </b> "
 ---
 
-
-
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+# Triển khai hệ thống ReGenZet lên AWS
 
 #### Tổng quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+ReGenZet là nền tảng quản lý gara xe điện cấp doanh nghiệp. Mục tiêu của workshop này là thiết kế và triển khai một hạ tầng đám mây trên AWS đảm bảo an toàn, tối ưu chi phí và tự động hóa cao để lưu trữ frontend, backend, lưu trữ media và các chức năng serverless AI/ML của ApexEV.
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+Nguyên tắc kiến trúc chính:
+- **An ninh là ưu tiên:** IAM theo nguyên tắc ít quyền nhất, mã hóa dữ liệu khi lưu và truyền, cô lập mạng và kiểm soát điểm truy cập dịch vụ.
+- **Tối ưu chi phí:** sử dụng dịch vụ quản lý theo mô hình trả theo mức sử dụng, right-sizing và chính sách lifecycle tự động cho lưu trữ và compute.
+- **Tự động hóa & Quan sát:** Infrastructure-as-Code, pipeline CI/CD, logging tập trung và cảnh báo tự động.
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+Dịch vụ lõi sử dụng trong workshop:
+- **AWS ECS (Fargate)** — chạy microservices backend mà không cần quản lý máy chủ.
+- **AWS Amplify** — host frontend, cung cấp CI/CD cho client web và quản lý hosting.
+- **Amazon RDS** — cơ sở dữ liệu quan hệ được quản lý cho dữ liệu giao dịch.
+- **Amazon S3** — lưu trữ đối tượng cho media, sao lưu và static assets.
+- **AWS Lambda** — hàm serverless cho pipeline AI/ML, thông báo và tác vụ nền.
+
+Workshop này bao gồm các module thực hành bao quát toàn bộ stack và các best-practice cho từng lớp.
 
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+1. [Tổng quan Workshop](5.1-Workshop-overview)
+2. [Kiến trúc Dự án](5.2-Project-Architecture/)
+3. [VPC của Dự án](5.3-VPC/)
+4. [Cơ sở dữ liệu và Lưu trữ](5.4-DatabaseAndStorage/)
+5. [Compute và Container](5.5-ComputeAndContainer/)
+6. [Tạo Load Balancer](5.6-CreateALB/)
+7. [Tạo Amplify và API Gateway](5.7-AmplifyAndAPIGateway/)
+8. [Hướng dẫn triển khai Frontend và Backend](5.8-Instruct-deploy-be-fe/)
